@@ -1,10 +1,17 @@
+
 * {
   box-sizing: border-box;
 }
 
-body {
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
   margin: 0;
-  font-family: "Lucida Grande";
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica";
 }
 
 a {
@@ -17,13 +24,12 @@ a {
 
 .container {
   max-width: 1170px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
+  padding:auto;
+  margin:auto;
 }
 
 .top-wrapper {
-  padding: 180px 0 100px 0;
+  padding: 130px 0;
   background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
   background-size: cover;
   color: white;
@@ -117,20 +123,10 @@ header {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Tambahkan CSS untuk menu-icon */
-.menu-icon {
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  
-  /* Gantikan property display ke none */
-  display: none;
-}
-
-
+/* Bagian Alvin */
 .lesson-wrapper {
-  padding-bottom: 80px;
+  padding-top: 20px;
+  padding-bottom: 550px;
   padding-left: 5%;
   padding-right: 5%;
   background-color: #f7f7f7;
@@ -144,7 +140,7 @@ header {
 }
 
 .heading h2 {
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .lesson {
@@ -152,46 +148,100 @@ header {
   width: 25%;
 }
 
+.menu{
+  height: 455px;
+  margin:3px;
+  border-radius: 4px;
+  opacity: 0.8
+}
+
+.menu:hover{
+  opacity: 1;
+}
+.lesson1{
+  background-color:#F57328;
+  border-radius: 20px;
+  
+}
+.lesson2{
+  background-color:#00C1D4;
+  border-radius: 20px;
+  
+}
+.lesson3{
+  background-color:#FABB51;
+  border-radius: 20px;
+
+}
+.lesson4{
+  background-color:#7CD1B8;
+  border-radius: 20px;
+}
+
 .lesson-icon {
   position: relative;
 }
 
-.lesson-icon p {
-  position: absolute;
-  top: 44%;
-  width: 100%;
-  color: white;
+.lesson-icon img{
+  width: 180px;
+  height: 180px;
+  margin-top: 30px;
 }
 
-.text-contents {
+.lesson-title {
+  font-weight: bold;
+  position: relative;
+  width: 100%;
+  color: black;
+  font-size: 23px;
+  margin-bottom: 10px;
+  padding-top: 14px;
+}
+
+.txt-contents {
   width: 80%;
   display: inline-block;
   margin-top: 15px;
   font-size: 15px;
-  color: #b3aeb5;
+  color: white;
 }
+
+
+/*Kamal */
 
 .heading h3 {
   font-weight: normal;
 }
 
 .message-wrapper {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #7CD1B8;
   padding-bottom: 80px;
   text-align: center;
+  background-color:#FAEDC6;
+}
+.message-wrapper h2{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.massage-wrapper h3{
+  font-weight: bold;
 }
 
 .message {
-  padding: 15px 40px;
-  background-color: #5dca88;
+  display: block;
+  border-radius: 20px;
+  padding: 15px 15px;
+  background: #333;
+  color: #fff;
   cursor: pointer;
-  box-shadow: 0 7px #1a7940;
-}
+  margin: 13px;
+  
+} 
 
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
+.message:hover {
+  background: #3E8E7E;
+  transition: .2s linear;
 }
 
 footer img {
@@ -206,4 +256,13 @@ footer p {
 footer {
   padding-top: 30px;
   padding-bottom: 20px;
+}
+
+
+.menu-icon {
+  color: rgb(117, 31, 31);
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
 }
