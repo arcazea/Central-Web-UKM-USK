@@ -22,106 +22,127 @@ a {
   clear: left;
 }
 
+/* Bagian Jordhy */
+header {
+  height: 70px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  position:fixed;
+  top:0px;
+  z-index:10;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 70px;
+  width: 80px;
+}
+.navbar a{
+  margin: 0 1.5rem;
+  font-size:17px;
+  align-items: center;
+  color: #333;
+}
+
+.navbar a:hover{
+  color: #3E8E7E;
+  transition: .2s linear;
+}
+.header-right a {
+  float: right;
+  line-height: 70px;
+  padding: 0 25px;
+  color: black;
+  display: block;
+  margin-right: 3px;
+  border-radius:4px
+}
+.login {
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+}
+
+.login:hover {
+  background-color: rgba(6, 206, 251, 0.5);
+}
+
+
+.signup {
+  background-color:rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+}
+
+.signup:hover {
+  background-color: rgba(255,127,80,0.5);
+}
+
+
 .container {
-  max-width: 1170px;
-  padding:auto;
-  margin:auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .top-wrapper {
-  padding: 130px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
+  padding: 180px 0 180px 0;
+  background-image: url(https://github.com/arcazea/Central-Web-UKM-USK/blob/main/asset/back1.png?raw=true);
   background-size: cover;
-  color: white;
-  text-align: center;
+  background-position: center;
 }
 
 .top-wrapper h1 {
   opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
+  font-size: 40px;
+  letter-spacing: 3px;
+  color:#3E8E7E;
+  margin: .5rem 3%;
+  max-width: 40rem;
+  font-weight: bold;
+
 }
 
+.top-wrapper h2 {
+  opacity: 0.7;
+  font-size: 40px;
+  letter-spacing: 3px;
+  color:#3E8E7E;
+  margin: .5rem 3%;
+  padding-bottom:2rem;
+  max-width: 40rem;
+  font-weight: bold;
+}
 .top-wrapper p {
   opacity: 0.7;
-  margin-bottom: 3px;
+  margin-top:5px;
+  margin-left:15px;
+  text-align:left;
+  background-color:rgba(22, 32, 43, 0.9);
+  padding:5px;
+  margin: .5rem 3%;
+  max-width: 40rem;
+  display: table;
+  color:bisque;
 }
 
-.btn-wrapper {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.btn-wrapper p {
-  margin: 10px 0;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 12px 24px;
-  color: white;
+.learn {
+  max-width: 40rem;
+  margin: 2.5rem 3%;
+  color: #fff;
   display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
+  border-radius: 5rem;
+  background: rgb(255,127,80);
+  padding: .9rem 2rem;
+  cursor: pointer;
+  font-size: 17px;
 }
 
-.btn:hover {
-  opacity: 1;
+.learn:hover {
+  background: #3E8E7E;
+  transition: .2s linear;
 }
 
-.fa {
-  margin-right: 5px;
-}
-
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
 
 /* Bagian Alvin */
 .lesson-wrapper {
